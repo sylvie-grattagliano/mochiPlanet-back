@@ -1,0 +1,682 @@
+/* Variables */
+:root {
+  --background-color: #fefdfc; /* Blanc cassé */
+  --text-color: #5c4a3f; /* Chocolat foncé */
+  --accent-color: #dcb8b1; /* Rose poudré */
+  --secondary-color: #f3e9dc; /* Beige doux */
+  --links-color: #c172e3;
+}
+
+/* Global Styles
+body {
+    margin: 0;
+    
+  }  */
+
+/* header {
+    background-color: var(--secondary-color);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  } */
+/* Barre de navigation */
+.navbar {
+  background-color: #dcb8b1;
+  color: #5c4a3f;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+/* Conteneur pour l'icône */
+.nav-icons {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.icon-link {
+  text-decoration: none;
+  color: #5c4a3f; /* Couleur de l'icône */
+  font-size: 20px; /* Taille de l'icône */
+  margin-left: 20px; /* Espacement entre les éléments */
+  transition: color 0.3s ease;
+}
+
+.icon-link:hover {
+  color: #c172e3; /* Couleur au survol */
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+}
+
+.nav-logo {
+  height: 70px;
+  width: auto;
+}
+/* menu mobile */
+.menu-burger {
+  font-size: 24px; /* Taille de l'icône */
+  cursor: pointer; /* Curseur en forme de main */
+  display: block; /* Visible sur mobile */
+}
+
+/* Liens de navigation */
+.nav-links {
+  display: none; /* Masqué par défaut */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  flex-direction: column; /* Liens empilés sur mobile */
+  gap: 10px;
+  top: 60px; /* Position sous la barre de navigation */
+  right: 0;
+  background-color: #a276f4;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 0 0 10px 10px;
+  z-index: 10;
+}
+
+/* Liens actifs (menu burger ouvert) */
+.nav-links.active {
+  display: flex; /*affiche si activé */
+}
+
+/* Style des liens */
+.nav-links li {
+  margin: 10px 0;
+}
+/* Liens individuels */
+.nav-links a {
+  text-decoration: none;
+  color: #5c4a3f;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+  background-color: #c172e3; /* Couleur au survol */
+}
+
+/* Responsivité pour la barre de navigation */
+@media (min-width: 768px) {
+  .menu-burger {
+    display: none; /* Cacher le menu burger sur desktop */
+  }
+
+  .nav-links {
+    display: flex; /* Afficher horizontalement */
+    flex-direction: row;
+    gap: 20px;
+    position: static;
+    background-color: transparent;
+    width: auto;
+    box-shadow: none;
+  }
+  .nav-links li {
+    margin: 0 15px;
+  }
+}
+/* Section Hero */
+.hero {
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+   text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7); 
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+/* Section Produits */
+.product-list {
+  padding: 20px;
+  text-align: center;
+}
+
+.product-list h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+  
+}
+
+ .product-grid {
+  display: grid;
+  grid-template-columns: 1fr; 
+  gap: 20px;
+} 
+
+
+.product-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.product-card h3 {
+  margin: 10px 0;
+}
+
+/* .product-card p {
+  font-weight: bold;
+} */
+
+/* Actions (Boutons)  */
+.product-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.btn-buy,
+.btn-view {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.btn-buy {
+  background-color: #5c4a3f; /* Chocolat foncé */
+  color: white;
+}
+
+.btn-buy:hover {
+  background-color: #dcb8b1; /* Rose poudré au survol */
+}
+
+.btn-view {
+  background-color: transparent;
+  color: #5c4a3f;
+  border: 1px solid #5c4a3f;
+}
+
+.btn-view:hover {
+  background-color: #5c4a3f;
+  color: white;
+}
+
+/* Bouton Voir Produit */
+.btn-view {
+  display: inline-block;
+  background-color: #5c4a3f; /* Chocolat foncé */
+  color: white;
+  padding: 8px 12px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
+.btn-view:hover {
+  background-color: #dcb8b1; /* Rose poudré */
+}
+/* Bouton Supprimer */
+.btn-delete {
+  background: none;
+  border: none;
+  color: #ff4d4f; /* Rouge */
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.btn-delete:hover {
+  color: #e11616; /* Rouge plus foncé au survol */
+}
+.btn-delete i {
+  font-size: 1.2rem;
+  color: #ff4d4f;
+}
+
+/* Responsive : Tablette */
+@media (min-width: 768px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Responsive : Ordinateur */
+@media (min-width: 1024px) {
+  .product-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .hero p {
+    font-size: 1.4rem;
+  }
+}
+/* style voir panier index */
+.btn-floating-cart {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #5c4a3f;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer - Mobile First */
+footer {
+  background-color: #dcb8b1; /* Chocolat foncé  */
+  color: white;
+  /* text-align: center;  */
+  padding: 15px 10px;
+  font-size: 0.9rem;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Responsive - Tablette (min-width: 768px) */
+@media (min-width: 768px) {
+  footer {
+    padding: 20px 15px;
+    font-size: 1rem;
+  }
+}
+
+/* Responsive - Ordinateur (min-width: 1024px) */
+@media (min-width: 1024px) {
+  footer {
+    padding: 25px 20px;
+    font-size: 1.1rem;
+  }
+  
+  .footer-content {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 1rem;
+    gap: 20px;
+    color: #5c4a3f;
+}
+/* Lien "À propos" */
+.footer-link {
+  color: #5c4a3f;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: white; 
+}
+}
+/* Section Panier */
+.cart {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cart-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cart-items li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.cart-items li:last-child {
+  border-bottom: none;
+}
+
+.cart-items img {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.cart-item-details {
+  flex: 1;
+  margin-left: 10px;
+}
+
+.cart-item-details h3 {
+  margin: 0;
+  font-size: 1rem;
+  color: var(--primary-color);
+}
+
+.cart-item-details p {
+  margin: 5px 0;
+  font-size: 0.9rem;
+  color: var(--text-color);
+}
+
+.cart-item-actions button {
+  background: var(--text-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.cart-item-actions button:hover {
+  background: var(--accent-color);
+}
+
+.cart-total {
+  text-align: right;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/* 
+STYLE page panier */
+
+/* .cart {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fefdfc; 
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* .cart h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #5c4a3f; /
+} */
+
+/* .cart-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+} */
+
+/* .cart-table th,
+.cart-table td {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+} */
+
+/* .cart-table th {
+  background-color: #5c4a3f; 
+  color: white;
+  font-weight: bold;
+} */
+
+/* .cart-table td img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 10px;
+} */
+
+/* .cart-summary {
+  text-align: right;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #5c4a3f;
+}  */
+
+/* Boutons */
+.btn {
+  background-color: #5c4a3f; /* Chocolat foncé */
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.btn:hover {
+  background-color: #dcb8b1; /* Rose poudré */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .cart-table th,
+  .cart-table td {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  .cart-summary {
+    font-size: 1rem;
+  }
+}
+.cart-summary {
+  text-align: right;
+  margin-top: 20px;
+}
+
+.cart-summary p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #5c4a3f;
+}
+
+.cart-summary button {
+  background-color: #5c4a3f;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cart-summary button:hover {
+  background-color: #dcb8b1;
+}
+
+/* Section Détails du Produit */
+
+.product-details {
+  display: flex;
+  flex-direction: column; /* Mobile : Empile les éléments */
+  align-items: center;
+  gap: 20px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+}
+
+/* Conteneur principal pour le header */
+.product-header {
+  display: flex;
+  justify-content: space-between; /* Espace entre les deux colonnes */
+  align-items: center; /* Centre les éléments verticalement */
+  padding: 10px 20px;
+}
+
+/* Colonne gauche : Titre */
+.title-container {
+  flex: 1; /* Prend toute la largeur disponible */
+  text-align: center; /* Centre le texte horizontalement */
+}
+
+.title-container h2 {
+  font-size: 2.5rem;
+  color: #5c4a3f;
+  margin: 0;
+}
+
+/* Colonne droite : Bouton */
+.button-container {
+  flex-shrink: 0; /* Le bouton garde sa taille */
+}
+
+.btn-return {
+  text-decoration: none;
+  background-color: #5c4a3f; /* Chocolat foncé */
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-return:hover {
+  background-color: #dcb8b1; /* Rose poudré */
+}
+
+.product-details img {
+  width: 100%; /* Mobile : Image prend toute la largeur */
+  max-width: 300px; /* Limite la taille sur les écrans plus grands */
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.product-details .details {
+  width: 100%; /* Mobile : Utilise toute la largeur */
+  text-align: center;
+}
+
+.product-details .details p {
+  margin: 10px 0;
+}
+
+.product-details form {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.product-details input[type="number"] {
+  width: 60px;
+  padding: 5px;
+  margin-right: 10px;
+}
+
+.product-details button {
+  background-color: #5c4a3f;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.product-details button:hover {
+  background-color: #dcb8b1;
+}
+/* Style pour l'image du produit sur la page produit */
+.product-details img {
+  max-width: 100%; /* Empêche l'image de dépasser la largeur de son conteneur */
+  width: 400px; /* Taille fixe pour une présentation équilibrée */
+  height: auto; /* Maintient les proportions de l'image */
+  border-radius: 10px; /* Ajoute des coins arrondis */
+  margin: 20px 0; /* Espacement autour de l'image */
+}
+@media (max-width: 768px) {
+  .product-details img {
+    width: 200px; /* Réduit la taille de l'image sur les écrans plus petits */
+  }
+}
+
+@media (max-width: 480px) {
+  .product-details img {
+    width: 150px; /* Encore plus petit pour les écrans de téléphone */
+  }
+}
+
+/* Responsive pour les tablettes (min-width: 768px) */
+@media (min-width: 768px) {
+  .product-details {
+    flex-direction: row; /* Tablettes : Affiche les éléments côte à côte */
+    justify-content: space-between;
+    max-width: 600px;
+  }
+
+  .product-details .details {
+    text-align: left;
+    margin-left: 20px;
+  }
+
+  .product-details img {
+    max-width: 250px;
+  }
+}
+
+/* Responsive pour les ordinateurs (min-width: 1024px) */
+@media (min-width: 1024px) {
+  .product-details {
+    max-width: 800px; /* PC : Limite la largeur pour une meilleure lisibilité */
+  }
+
+  .product-details img {
+    max-width: 300px; /* Agrandit légèrement l'image */
+  }
+}

@@ -1,0 +1,99 @@
+/* Fond principal */
+.mochi-background {
+    background: linear-gradient(to bottom right, #ffe4e1, #d9afd9);
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    text-align: center;
+}
+
+/* Texte principal */
+.mochi-text {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.mochi-text h1 {
+    font-size: 2.5rem;
+    color: #5c4a3f;
+    margin-bottom: 15px;
+}
+
+.mochi-text h2 {
+    font-size: 2rem;
+    color: #9c4a3f;
+    margin-top: 20px;
+}
+
+.mochi-text p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.highlight {
+    color: #d95d77;
+    font-weight: bold;
+}
+
+/* Mochis animés */
+.mochi-animation {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.mochi {
+    width: 100px;
+    height: 100px;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+/* Animations */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(20px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.mochi-bounce {
+    animation-name: bounce;
+}
+
+.mochi-spin {
+    animation-name: spin;
+}
+
+.mochi-slide {
+    animation-name: slide;
+}
