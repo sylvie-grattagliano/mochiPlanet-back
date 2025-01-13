@@ -1,0 +1,309 @@
+Update Request Received: Array
+(
+    [product_id] => 11
+    [quantity_delta] => 1
+)
+
+Update Request Received: Array
+(
+    [product_id] => 11
+    [quantity_delta] => 1
+)
+
+Update Request Received: Array
+(
+    [product_id] => 11
+    [quantity_delta] => 1
+)
+
+Update Request Received: Array
+(
+    [product_id] => 8
+    [quantity_delta] => -1
+)
+
+Update Request Received: Array
+(
+    [product_id] => 11
+    [quantity_delta] => 1
+)
+
+Update Request Received: Array
+(
+    [product_id] => 1
+    [quantity_delta] => 1
+)
+
+Update Request Received: Array
+(
+    [product_id] => 1
+    [quantity_delta] => 1
+)
+
+Update Request Received: Array
+(
+    [product_id] => 5
+    [quantity_delta] => 1
+)
+
+Update Request Received: Array
+(
+    [product_id] => 5
+    [quantity_delta] => 1
+)
+
+Update Request Received: Array
+(
+    [product_id] => 1
+    [quantity_delta] => -1
+)
+
+Update Request Received: Array
+(
+    [product_id] => 1
+    [quantity_delta] => -1
+)
+
+Update Request Received: Array
+(
+    [product_id] => 1
+    [quantity_delta] => 1
+)
+
+Update Request Received: Array
+(
+    [product_id] => 1
+    [quantity_delta] => 1
+)
+
+Update Request Received: Array
+(
+    [product_id] => 6
+    [quantity_delta] => -1
+)
+
+Update Request Received: Array
+(
+    [product_id] => 6
+    [quantity_delta] => -1
+)
+
+Update Request Received: Array
+(
+    [product_id] => 6
+    [quantity_delta] => -1
+)
+
+Update Request Received: Array
+(
+    [product_id] => 6
+    [quantity_delta] => -1
+)
+
+Update Request Received: Array
+(
+    [product_id] => 13
+    [quantity_delta] => -1
+)
+
+Update Request Received: Array
+(
+    [product_id] => 13
+    [quantity_delta] => -1
+)
+
+Update Request Received: Array
+(
+    [product_id] => 13
+    [quantity_delta] => 1
+)
+
+Update Request Received: Array
+(
+    [product_id] => 13
+    [quantity_delta] => -1
+)
+
+Update Request Received: Array
+(
+    [product_id] => 13
+    [quantity_delta] => -1
+)
+
+Update Request Received: Array
+(
+    [product_id] => 13
+    [quantity_delta] => 1
+)
+
+Update Request Received: Array
+(
+    [product_id] => 13
+    [quantity_delta] => 1
+)
+
+Update Request Received: Array
+(
+    [product_id] => 12
+    [quantity_delta] => 1
+)
+
+Update Request Received: Array
+(
+    [product_id] => 12
+    [quantity_delta] => 1
+)
+
+Update Request Received: Array
+(
+    [product_id] => 12
+    [quantity_delta] => 1
+)
+
+Update Request Received: Array
+(
+    [product_id] => 12
+    [quantity_delta] => 1
+)
+
+Update Request Received: Array
+(
+    [product_id] => 12
+    [quantity_delta] => 1
+)
+
+Update Request Received: Array
+(
+    [product_id] => 12
+    [quantity_delta] => 1
+)
+
+Update Request Received: Array
+(
+    [product_id] => 6
+    [quantity_delta] => 1
+)
+
+Update Request Received: Array
+(
+    [product_id] => 6
+    [quantity_delta] => 1
+)
+
+Update Request Received: Array
+(
+    [product_id] => 6
+    [quantity_delta] => 1
+)
+
+Update Request Received: Array
+(
+    [product_id] => 6
+    [quantity_delta] => 1
+)
+
+Update Request Received: Array
+(
+    [product_id] => 6
+    [quantity_delta] => 1
+)
+
+Update Request Received: Array
+(
+    [product_id] => 6
+    [quantity_delta] => 1
+)
+
+Update Request Received: Array
+(
+    [product_id] => 12
+    [quantity_delta] => 1
+)
+
+Update Request Received: Array
+(
+    [product_id] => 12
+    [quantity_delta] => 1
+)
+
+Update Request Received: Array
+(
+    [product_id] => 12
+    [quantity_delta] => 1
+)
+
+Update Request Received: Array
+(
+    [product_id] => 6
+    [quantity_delta] => 1
+)
+
+Update Request Received: Array
+(
+    [product_id] => 5
+    [quantity_delta] => 1
+)
+
+Update Request Received: Array
+(
+    [product_id] => 1
+    [quantity_delta] => 1
+)
+
+Update Request Received: Array
+(
+    [product_id] => 1
+    [quantity_delta] => 1
+)
+
+Update Request Received: Array
+(
+    [product_id] => 1
+    [quantity_delta] => 1
+)
+
+Update Request Received: Array
+(
+    [product_id] => 1
+    [quantity_delta] => 1
+)
+
+Update Request Received: Array
+(
+    [product_id] => 6
+    [quantity_delta] => 1
+)
+
+Update Request Received: Array
+(
+    [product_id] => 6
+    [quantity_delta] => 1
+)
+
+Update Request Received: Array
+(
+    [product_id] => 12
+    [quantity_delta] => -1
+)
+
+Update Request Received: Array
+(
+    [product_id] => 12
+    [quantity_delta] => -1
+)
+
+Remove Request Received: Array
+(
+    [product_id] => 1
+)
+
+Remove Request Received: Array
+(
+    [product_id] => 5
+)
+
+Remove Request Received: Array
+(
+    [product_id] => 6
+)
+

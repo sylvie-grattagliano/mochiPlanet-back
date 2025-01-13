@@ -1,13 +1,14 @@
 <?php
 // Démarrage de la session
-session_start();
-
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
 // la connexion à la base de données
 include 'includes/db.php';
 
 $error = ""; // stock  messages d'erreur
 
-// Traitement du formulaire de connexion
+// formulaire de connexion
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $email = $_POST['email'] ?? '';
     $password = $_POST['password'] ?? '';

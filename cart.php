@@ -20,8 +20,9 @@
     </header>
 
     <main>
-    <main>
+    
     <section class="cart">
+      
       <h2>Vous pouvez à tout moment actualiser vos achats</h2>
       <ul class="cart-items">
         <!-- Les produits ajoutés s’afficheront ici dynamiquement -->

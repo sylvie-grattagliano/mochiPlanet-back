@@ -1,4 +1,7 @@
 <?php
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
 // Paramètres de la base de données
 $host = 'localhost';
 $dbname = 'mochiplanet';
