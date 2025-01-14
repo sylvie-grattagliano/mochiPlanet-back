@@ -307,3 +307,23 @@ Remove Request Received: Array
     [product_id] => 6
 )
 
+Remove Request Received: Array
+(
+    [product_id] => 2
+)
+
+Remove Request Received: Array
+(
+    [product_id] => 3
+)
+
+Remove Request Received: Array
+(
+    [product_id] => 4
+)
+
+Remove Request Received: Array
+(
+    [product_id] => 2
+)
+
